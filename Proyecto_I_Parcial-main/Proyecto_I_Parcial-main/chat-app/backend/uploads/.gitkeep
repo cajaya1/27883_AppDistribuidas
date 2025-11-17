@@ -1,0 +1,7 @@
+# Directorio de Archivos Subidos
+
+Este directorio contiene los archivos que los usuarios suben a las salas multimedia.
+
+Los archivos se almacenan con nombres únicos generados automáticamente para evitar conflictos.
+
+**Nota**: Este directorio no debe incluirse en el control de versiones por razones de seguridad y espacio.

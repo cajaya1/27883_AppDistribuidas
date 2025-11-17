@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: chat-app
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: EDUCATIONAL_MODE
+        value: true
+      - key: USE_POSTGRES
+        value: false
+      - key: USE_REDIS
+        value: false
+      - key: MAX_CONNECTIONS_PER_IP
+        value: 100
+      - key: LOG_LEVEL
+        value: info
+    healthCheckPath: /health
